@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DASAR</title>
+</head>
+
+<body>
+    <!-- dasar pemrograman 1 -->
+    <P>HELLO WORD!</P>
+    <p>learn Html Dasar</p>
+
+    <hr>
+    <!-- TAG -->
+
+    <!-- Heading -->
+    <!-- 
+    berfungsi untuk menentukan judul utama dan sub sub judul disatu halaman
+    h1 judul utama
+    h2- h3 sub judul
+    p paragraf
+    -->
+    <h1>HEADING</h1>
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    
+    <h1>Judul artikel</h1>
+    <p>isi artikel</p>
+
+    <h2>sub judul artikel</h2>
+    <p>isi sub judul artikel</p>
+
+    <hr>
+
+    <!-- Paragraf -->
+    <h2>PARAGRAF</h2>
+
+    <h2>b &  i & u</h2>
+    <p>berfungsi untuk memberikan huruf tebal miring garis bawah seperti contoh dibawah</p>
+    <p> <b>Lorem,</b> ,<i>ipsum,</i>  ,<u>dolor.</u> ,</p>
+
+    <h2>strong & em</h2>
+    <p>berfungsi untuk memberikan penekanan sama seperti fungsi diatas tapi memiliki makna yang berbeda</p>
+    <p><strong>pengunguman</strong> saya anak yang cerdas <em>mungkin</em> </p>
+
+    <h2>Fungsi br & hr</h2>
+    <p>br befungsi untuk menaambahkan baris baru seperti contoh dibawah</p>
+    <br>
+    <p>ini <br> paragraf</p>
+    <p>hr befungsi untuk membuat garis horizontal seperti dibawah</p>
+    
+<hr>
+
+    <!-- List -->
+    <!-- 
+        list befungsi untuk membuat listlist dari suatu kelompok
+    ordered list
+    unordered list
+    definition list-->
+    <h2>LIST</h2>
+    
+    <h3>order list</h3>
+    <ol>
+        <li>kegiatan 1</li>
+        <li>kegiatan 2</li>
+        <li>kegiatan 3</li>
+    </ol>
+
+    <ol type="A">
+        <li>kegiatan 1</li>
+        <li>kegiatan 2</li>
+        <li>kegiatan 3</li>
+    </ol>
+
+    <ol type="a">
+        <li>kegiatan 1</li>
+        <li>kegiatan 2</li>
+        <li>kegiatan 3</li>
+    </ol>
+
+    <ol type="I">
+        <li>kegiatan 1</li>
+        <li>kegiatan 2</li>
+        <li>kegiatan 3</li>
+    </ol>
+
+    <ol type="i">
+        <li>kegiatan 1</li>
+        <li>kegiatan 2</li>
+        <li>kegiatan 3</li>
+    </ol>
+
+    <h3>unordered list</h3>
+    <ul>
+        <li>Firman</li>
+        <li>Arobi</li>
+        <li>Jack</li>
+    </ul>
+
+    <ul type="square">
+        <li>Firman</li>
+        <li>Arobi</li>
+        <li>Jack</li>
+    </ul>
+
+    <ul type="circle">
+        <li>Firman</li>
+        <li>Arobi</li>
+        <li>Jack</li>
+    </ul>
+
+    <ul type="disc">
+        <li>Firman</li>
+        <li>Arobi</li>
+        <li>Jack</li>
+    </ul>
+
+    <h3>definition list</h3>
+    <dl>
+        <dt>terminologi</dt>
+        <dd>description</dd>
+        <dt> <strong>HTML</strong></dt>
+        <dd>hypertext markup languege</dd>
+    </dl>
+<hr>
+    <!-- hyperlink -->
+    <!-- 
+        berfungsi untuk menyambungkan website
+        1. a anchor(penghubung)
+        a. https://www.google.com/ external link (link penghubung ke link website orang lain)
+        b. exhyperlink.html internal link (link untuk menyambungkan halaman-halaman website kita sendiri)
+        c. ../index.html relative url (link untuk menyambungkan hlaman dengan keluar terlebih dahulu didalam folder)
+
+        2. page anchor
+        #konten, dan index.html#konten
+        
+        3. <a href="" target=""></a>
+            a. _self
+            b. _blank
+            c. _parent
+            d. _top
+    -->
+    <h2>HYPERLINK</h2>
+    <h2>1. achor</h2>
+    <h3>external link</h3>
+    <p>silahkan <a href="https://www.google.com/">klik</a> untuk menyambungkan dengan google</p>
+
+    <h3>internal link</h3>
+    <p>silahkan <a href="exhyperlink.html">klik</a> untuk menyambungkan dengan google</p>
+
+    <h3>relative url</h3>
+    <p>silahkan <a href="/html/exhyperlink/index.html">klik</a> relative url ada pada halaman folder exhyperlink</p>
+
+    <h2>3. target</h2>
+    <a href="exhyperlink.html" target="_blank">contoh pemakaian target</a>
+
+    <h2>2. page anchor</h2>
+    <ul>
+        <li> <a href="#konten1">konten 1</a></li>
+        <li> <a href="#konten2">konten 2</a> </li>
+        <li> <a href="#konten3">konten 3</a> </li>
+        <li> <a href="exhyperlink.html">konten page anchor bagian 2</a> </li>
+    </ul>
+
+    <h3 id="konten1">konten 1</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores recusandae architecto perspiciatis atque
+        assumenda vitae quasi vel? Ipsum eos accusamus dolore inventore illum voluptates nisi dolorem, veniam soluta
+        minus? Nesciunt neque enim quaerat nemo corporis soluta pariatur magnam minima quas, assumenda ducimus deserunt
+        et ex deleniti quia at id!</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h3 id="konten2">konten 2</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores recusandae architecto perspiciatis atque
+        assumenda vitae quasi vel? Ipsum eos accusamus dolore inventore illum voluptates nisi dolorem, veniam soluta
+        minus? Nesciunt neque enim quaerat nemo corporis soluta pariatur magnam minima quas, assumenda ducimus deserunt
+        et ex deleniti quia at id!</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h3 id="konten3">konten 3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolores recusandae architecto perspiciatis atque
+        assumenda vitae quasi vel? Ipsum eos accusamus dolore inventore illum voluptates nisi dolorem, veniam soluta
+        minus? Nesciunt neque enim quaerat nemo corporis soluta pariatur magnam minima quas, assumenda ducimus deserunt
+        et ex deleniti quia at id!</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+    <!-- image -->
+    <!-- 
+        internal resource
+        external resource (hot link)
+        hyperlink image 
+        atribut(src, alt, title, width, height)
+    -->
+    <h2>IMAGE</h2>
+    <img src="image.pn" alt="image">
+    <br>
+    <img src="image.png" title="image">
+    <br>
+    <img src="image.png" width="50%">
+    <br>
+    <img src="image.png" width="300">
+    <br>
+    <img src="image.png" height="300">
+    <br>
+    <a href="https://www.google.com/"> <img src="image.png" alt="imagehyperlink"></a>
+
+    <hr>
+
+    <!-- table -->
+    <!-- 
+        atribut (border, cellspacing, cellpadding, colspan, rowspan)
+     -->
+    <h2>TABLE</h2>
+    <h2>simple table</h2>
+    <table>
+        <tr>
+            <td>baris 1, kolom 1</td>
+            <td>baris 1, kolom 2</td>
+        </tr>
+        <tr>
+            <td>baris 2, kolom 1</td>
+            <td>baris 2, kolom 2</td>
+        </tr>
+    </table>
+
+
+    <h2>kompleks table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>kolom1</th>
+                <th>kolom1</th>
+                <th>kolom2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td>baris 1, kolom 1</td>
+                <td>baris 1, kolom 2</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>baris 2, kolom 1</td>
+                <td>baris 2, kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <h2>contoh penggunaan atribut</h2>
+    <table border="1" cellspacing="0" cellpadding="30">
+        <tr>
+            <td>baris 1, kolom 1</td>
+            <td>baris 1, kolom 2</td>
+        </tr>
+        <tr>
+            <td>baris 2, kolom 1</td>
+            <td>baris 2, kolom 2</td>
+        </tr>
+    </table>
+    <br><br><b></b>
+
+    <h2>colspan</h2>
+    <table border="1" cellpading="5" cellspacing="0">
+        <tr>
+            <td>1,1</td>
+            <td colspan="2">colspan2</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td>2,2</td>
+            <td>2,3</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            <td>3,2</td>
+            <td>3,3</td>
+        </tr>
+    </table>
+    <br><br><b></b>
+
+    <h2>rowspan</h2>
+    <table border="1" cellpading="5" cellspacing="0">
+        <tr>
+            <td rowspan="3">rowspan 3</td>
+            <td colspan="2">colspan 2</td>
+        </tr>
+        <tr>
+            
+            <td>2,2</td>
+            <td>2,3</td>
+        </tr>
+        <tr>
+            <td>3,2</td>
+            <td>3,3</td>
+        </tr>
+    </table>
+    <br><br><b></b>
+
+    <h2>gabung tengah</h2>
+    <table border="1" cellpading="5" cellspacing="0">
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+            <td>1,4</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td colspan="2" rowspan="2">colspan2 <br>rowspan2</td>
+            
+            <td>2,4</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            
+            <td>3,4</td>
+        </tr>
+        <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+            <td>4,4</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- form -->
+    <!-- 
+        elemen form (input, textarea, select, button, label)
+        atribut input (text, password, radio, checkbox, submit, reset, button)
+     -->
+    <h2>FORM</h2>
+    <h3>input & label</h3>
+    <form action="">
+        <label for="username">Username :</label>
+        <input type="text" id="username">
+        <br>
+        <label for="password">Password :</label>
+        <input type="password" id="password">
+        <br>
+        <input type="radio" id="pria" name="jeniskelamin"> <label for="pria">Pria</label>
+        <input type="radio" id="wanita" name="jeniskelamin"> <label for="wanita">Wanita</label>
+        <br>
+        <input type="checkbox" id="makan"> <label for="makan">Makan</label>
+        <input type="checkbox" id="tidur"> <label for="tidur">Tidur</label>
+        <input type="checkbox" id="olahraga"> <label for="olahraga">Olahraga</label>
+        <br>
+        <input type="submit" value="Kirim!">
+        <input type="reset" value="Hapus!">
+        <input type="button" value="Tombol!">
+    </form>
+
+    <h3>select, text area,button</h3>
+    <form >
+        <select name="" id="">
+            <option value="">bandung</option>
+            <option value="">jakarta</option>
+            <option value="">surabaya</option>
+        </select>
+        <br>
+        <textarea></textarea>
+        <br>
+        <button type="submit">Kirim!</button>
+        <button type="reset">Reset!</button>
+        <button type="button">Kirim!</button>
+    </form>
+
+</body>
+
+</html>
