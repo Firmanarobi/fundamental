@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+        <!-- table -->
+    <!-- 
+        atribut (border, cellspacing, cellpadding, colspan, rowspan)
+     -->
+    <h2>simple table</h2>
+    <table>
+        <tr>
+            <td>baris 1, kolom 1</td>
+            <td>baris 1, kolom 2</td>
+        </tr>
+        <tr>
+            <td>baris 2, kolom 1</td>
+            <td>baris 2, kolom 2</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>kompleks table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>kolom1</th>
+                <th>kolom1</th>
+                <th>kolom2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>baris 1</th>
+                <td>baris 1, kolom 1</td>
+                <td>baris 1, kolom 2</td>
+            </tr>
+            <tr>
+                <th>baris 2</th>
+                <td>baris 2, kolom 1</td>
+                <td>baris 2, kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>contoh penggunaan atribut</h2>
+    <table border="1" cellspacing="0" cellpadding="30">
+        <tr>
+            <td>baris 1, kolom 1</td>
+            <td>baris 1, kolom 2</td>
+        </tr>
+        <tr>
+            <td>baris 2, kolom 1</td>
+            <td>baris 2, kolom 2</td>
+        </tr>
+    </table>
+    <br><br><b></b>
+
+    <h2>colspan</h2>
+    <table border="1" cellpading="5" cellspacing="0">
+        <tr>
+            <td>1,1</td>
+            <td colspan="2">colspan2</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td>2,2</td>
+            <td>2,3</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            <td>3,2</td>
+            <td>3,3</td>
+        </tr>
+    </table>
+    <br><br><b></b>
+
+    <h2>rowspan</h2>
+    <table border="1" cellpading="5" cellspacing="0">
+        <tr>
+            <td rowspan="3">rowspan 3</td>
+            <td colspan="2">colspan 2</td>
+        </tr>
+        <tr>
+            
+            <td>2,2</td>
+            <td>2,3</td>
+        </tr>
+        <tr>
+            <td>3,2</td>
+            <td>3,3</td>
+        </tr>
+    </table>
+    <br><br><b></b>
+
+    <h2>gabung tengah</h2>
+    <table border="1" cellpading="5" cellspacing="0">
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+            <td>1,4</td>
+        </tr>
+        <tr>
+            <td>2,1</td>
+            <td colspan="2" rowspan="2">colspan2 <br>rowspan2</td>
+            
+            <td>2,4</td>
+        </tr>
+        <tr>
+            <td>3,1</td>
+            
+            <td>3,4</td>
+        </tr>
+        <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+            <td>4,4</td>
+        </tr>
+    </table>
+
+</body>
+</html>
