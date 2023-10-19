@@ -1,0 +1,174 @@
+/* font styling */
+/* 
+font-family (jenis font)
+font-size (ukuran font)
+font-weight (ketebalan font)
+font-variant (font menjadi samml caps)
+font-style (font menjadi bercetak miring)
+line-height (spasi antara baris)
+ */
+h1 {
+    /* font-family: verdana,arial, sans-serif;
+    font-size: 10em;
+    font-size: 100px;
+    font-weight: normal;
+    font-variant: small-caps;
+    font-style: oblique; */
+}
+p {
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    line-height: 20px; */
+}
+
+/* text styling */
+/* 
+color (warna tulisan)
+text-align (mengatur format teks)
+text-indent (memberikan indentitas pada teks)
+text-decoration (dekorasi pada teks)
+text-transform (jenis huruf besar atau kecil)
+letter-spacing (spasi antara huruf)
+word-spacing (spasi antara kata)
+*/
+h1 {
+    /* color: skyblue;
+    color: #032346; */
+    /* color: rgb(115,80,212); */
+
+    /* text-align: center; */
+}
+p{
+    /* text-align: left; */
+    /* text-align: right; */
+    /* text-align: center; */
+    /* text-align: justify; */
+
+    /* text-indent: 100px; */
+
+    /* text-decoration: none; */
+    /* text-decoration: underline; */
+    /* text-decoration: overline; */
+    /* text-decoration: line-through; */
+
+    /* text-transform: none; */
+    /* text-transform: lowercase; */
+    /* text-transform: uppercase; */
+    /* text-transform: capitalize; */
+
+    /* letter-spacing: 0px; */
+
+    /* word-spacing: 0px; */
+}
+
+/* background */
+/* 
+background-color (warna)
+background-image (gambar)
+background-positition (posisi)
+background-repeat (jenis pengulangan pada gambar)
+*/
+body {
+    /* background-color: aqua;
+    background-image: url(bg1.webp);
+    background-repeat: repeat-x;
+    background-position: left; */
+}
+
+/* selector basic */
+/* 
+elemen html
+id (#)
+class (.)
+complex selector (jika ingin menggunakan style berbeda di class yg sama, contoh di paragraf p.cetak-tebal)
+*/
+body{
+    font-family: arial;
+}
+
+h1, h2 {
+    color: green;
+}
+
+ul li a {
+    color: orange;
+}
+
+ol li a {
+    color: red;
+}
+
+#p1{
+    color: burlywood;
+}
+
+.p2{
+    color: red;
+}
+
+.cetak-tebal {
+    font-size: 50px;
+}
+
+p.cetak-tebal{
+    font-size: 10px;
+}
+
+/* pseudo class */
+/* 
+link (link)
+hover (link)
+active (link)
+visited (link)
+
+first-child
+last-child
+nth-child(n, 2n, 3n, 3n+1, 3n-1, even, odd)
+
+first-of-type
+last-of-type
+*/
+.hello:link{
+    color: red;
+}
+.hello:hover{
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.hello:active{
+    color: black;
+    font-style: italic;
+}
+.hello:visited{
+    color:green;
+}
+
+li:first-child a {
+    color: green;
+}
+li:last-child a {
+    color: green;
+}
+li:nth-child(5) a {
+    color: green;
+}
+li:nth-child(5) a {
+    color: green;
+}
+
+p:last-of-type {
+    color: red;
+}
+
+/* inheritance */
+/* 
+(pewarisan)
+
+*/
+
+/* specificity */
+/* 
+(beban)
+*/
