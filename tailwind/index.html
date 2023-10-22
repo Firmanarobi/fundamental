@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;0,900;1,100;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;0,900;1,100;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <title>tailwind</title>
     <link rel="stylesheet" href="dist/output.css">
 
-    <!-- <style>
-        * {
-            border: 1px solid red;
+    <!-- <style >
+        #toggle:checked ~ label div.toggle-circle {
+            @apply translate-x-3;
         }
-
     </style> -->
 </head>
-<body>
+
+<body class="dark:bg-slate-800 dark:text-slate-200">
     <h1>Tailwind Dasar</h1>
+
+    <!-- spacing -->
     <section class=" bg-gray-700 h-screen">
         <h2>SPACING</h2>
         <div class="m-8">Margin</div>
-        
+
         <div class="px-5">Padding</div>
 
         <div class="m-8 px-5">Margin Dan Padding</div>
     </section>
 
+    <!-- sizing -->
     <section class="mb-32 h-screen ">
         <h2>SIZING</h2>
 
@@ -36,18 +42,220 @@
         <div class="h-24">height</div>
     </section>
 
+    <!-- typography -->
     <section class="mb-4 py-10 bg-slate-900">
         <div class="pt-11 font-poppin mx-auto max-w-7xl h-screen bg-slate-500 rounded-lg shadow-xl">
 
-        <h2 class="m-5 text-4xl text-center font-bold">TYPOGRAPHY</h2>
+            <h2 class="m-5 text-4xl text-center font-bold">TYPOGRAPHY</h2>
 
-        <div class="m-4 text-xl font-semibold"><a href="#" class="hover:bg-slate-800 rounded-md" >Firman arobi</a> </div>
+            <div class="m-4 text-xl font-semibold"><a href="#" class="hover:bg-slate-800 rounded-md">Firman arobi</a>
+            </div>
 
-        <p class="m-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, cum sint nostrum tempora repudiandae accusamus hic dignissimos non aspernatur quam et, quos debitis, assumenda modi dicta est quidem. Debitis quia maiores accusamus nobis inventore magnam porro suscipit iure libero, corrupti, quam nostrum possimus molestias quaerat sed tenetur incidunt dolores! Perferendis.</p>
+            <p class="m-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, cum sint nostrum tempora
+                repudiandae accusamus hic dignissimos non aspernatur quam et, quos debitis, assumenda modi dicta est
+                quidem. Debitis quia maiores accusamus nobis inventore magnam porro suscipit iure libero, corrupti, quam
+                nostrum possimus molestias quaerat sed tenetur incidunt dolores! Perferendis.</p>
 
-        <p class="mx-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, ipsam possimus corporis dolor sint temporibus at? Dicta neque adipisci et corporis repudiandae eaque labore ullam provident ut, necessitatibus sunt nihil, cumque dolor voluptates possimus, enim voluptatibus nostrum ex saepe delectus perferendis id officia! Quod quasi quas harum soluta, officiis recusandae ut, debitis nulla eligendi sint nihil modi dolorum, facere rem ex explicabo quia distinctio ullam veritatis repellat ipsam molestias! Amet molestiae veniam blanditiis modi fugiat praesentium voluptas temporibus labore, commodi architecto rem accusamus. Optio hic aut similique ab dolorum laborum ad labore vero iste necessitatibus, deleniti et, rem quos inventore.</p>
-    </div>
+            <p class="mx-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, ipsam possimus corporis
+                dolor sint temporibus at? Dicta neque adipisci et corporis repudiandae eaque labore ullam provident ut,
+                necessitatibus sunt nihil, cumque dolor voluptates possimus, enim voluptatibus nostrum ex saepe delectus
+                perferendis id officia! Quod quasi quas harum soluta, officiis recusandae ut, debitis nulla eligendi
+                sint nihil modi dolorum, facere rem ex explicabo quia distinctio ullam veritatis repellat ipsam
+                molestias! Amet molestiae veniam blanditiis modi fugiat praesentium voluptas temporibus labore, commodi
+                architecto rem accusamus. Optio hic aut similique ab dolorum laborum ad labore vero iste necessitatibus,
+                deleniti et, rem quos inventore.</p>
+        </div>
     </section>
 
+    <!--  -->
+    <h2>background overflow</h2>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] overflow-hidden"
+        style="background-image: url('https:/source.unsplash.com/1000x600?mosque'); ">
+        <p class="p-5 text-2xl "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum obcaecati optio quae
+            nobis fugit perferendis eaque quisquam aperiam aliquid, facilis natus, repellat, architecto qui. Iusto a
+            quis, dolore optio earum necessitatibus aliquid suscipit similique officia quas, odio error, sed facere
+            unde. Pariatur unde officiis aliquam magnam optio aspernatur, culpa delectus veritatis temporibus.
+            Accusantium inventore facilis, tempora totam soluta fugiat nostrum, et maxime vel, libero iste unde
+            repellendus aliquam possimus esse impedit adipisci nulla nisi voluptate vero ratione. Illo, ipsam eaque
+            alias officia blanditiis expedita a labore nam itaque quae quibusdam omnis temporibus numquam sunt ea sit ab
+            est tempora deleniti.</p>
+    </div>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] overflow-scroll"
+        style="background-image: url('https:/source.unsplash.com/1000x600?mosque'); ">
+        <p class="p-5 text-2xl "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum obcaecati optio quae
+            nobis fugit perferendis eaque quisquam aperiam aliquid, facilis natus, repellat, architecto qui. Iusto a
+            quis, dolore optio earum necessitatibus aliquid suscipit similique officia quas, odio error, sed facere
+            unde. Pariatur unde officiis aliquam magnam optio aspernatur, culpa delectus veritatis temporibus.
+            Accusantium inventore facilis, tempora totam soluta fugiat nostrum, et maxime vel, libero iste unde
+            repellendus aliquam possimus esse impedit adipisci nulla nisi voluptate vero ratione. Illo, ipsam eaque
+            alias officia blanditiis expedita a labore nam itaque quae quibusdam omnis temporibus numquam sunt ea sit ab
+            est tempora deleniti.</p>
+    </div>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] overflow-scroll bg-local"
+        style="background-image: url('https:/source.unsplash.com/1000x600?mosque'); ">
+        <p class="p-5 text-2xl "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum obcaecati optio quae
+            nobis fugit perferendis eaque quisquam aperiam aliquid, facilis natus, repellat, architecto qui. Iusto a
+            quis, dolore optio earum necessitatibus aliquid suscipit similique officia quas, odio error, sed facere
+            unde. Pariatur unde officiis aliquam magnam optio aspernatur, culpa delectus veritatis temporibus.
+            Accusantium inventore facilis, tempora totam soluta fugiat nostrum, et maxime vel, libero iste unde
+            repellendus aliquam possimus esse impedit adipisci nulla nisi voluptate vero ratione. Illo, ipsam eaque
+            alias officia blanditiis expedita a labore nam itaque quae quibusdam omnis temporibus numquam sunt ea sit ab
+            est tempora deleniti.</p>
+    </div>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] overflow-scroll bg-fixed"
+        style="background-image: url('https:/source.unsplash.com/1000x600?mosque'); ">
+        <p class="p-5 text-2xl "> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum obcaecati optio quae
+            nobis fugit perferendis eaque quisquam aperiam aliquid, facilis natus, repellat, architecto qui. Iusto a
+            quis, dolore optio earum necessitatibus aliquid suscipit similique officia quas, odio error, sed facere
+            unde. Pariatur unde officiis aliquam magnam optio aspernatur, culpa delectus veritatis temporibus.
+            Accusantium inventore facilis, tempora totam soluta fugiat nostrum, et maxime vel, libero iste unde
+            repellendus aliquam possimus esse impedit adipisci nulla nisi voluptate vero ratione. Illo, ipsam eaque
+            alias officia blanditiis expedita a labore nam itaque quae quibusdam omnis temporibus numquam sunt ea sit ab
+            est tempora deleniti.</p>
+    </div>
+
+    <h2>background size</h2>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-auto"
+        style="background-image: url('https:/source.unsplash.com/1000x600?laptop'); ">
+    </div>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-cover"
+        style="background-image: url('https:/source.unsplash.com/1000x600?laptop'); ">
+    </div>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain"
+        style="background-image: url('https:/source.unsplash.com/1000x600?laptop'); ">
+    </div>
+
+    <h2>background repeat</h2>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain bg-no-repeat bg-center"
+        style="background-image: url('https:/source.unsplash.com/1000x600?laptop'); ">
+    </div>
+
+    <h2>BORDER</h2>
+    <h3>bordder radius</h3>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain bg-no-repeat bg bg-center rounded-xl "
+        style="background-image: url('https:/source.unsplash.com/1000x600?home'); ">
+    </div>
+    <h3>bordder width</h3>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain bg-no-repeat bg bg-center rounded-xl border-8"
+        style="background-image: url('https:/source.unsplash.com/1000x600?home'); ">
+    </div>
+    <h3>bordder color</h3>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain bg-no-repeat bg bg-center rounded-xl border-8 border-red-900"
+        style="background-image: url('https:/source.unsplash.com/1000x600?home'); ">
+    </div>
+    <h3>bordder style</h3>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain bg-no-repeat bg bg-center rounded-xl border-8 border-red-900 border-dotted"
+        style="background-image: url('https:/source.unsplash.com/1000x600?home'); ">
+    </div>
+    <h2>EFFECT & SHADOW</h2>
+    <h3>shadow</h3>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain bg-no-repeat bg bg-center rounded-xl  shadow-xl "
+        style="background-image: url('https:/source.unsplash.com/1000x600?family'); ">
+    </div>
+    <h3>shadow color</h3>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain bg-no-repeat bg bg-center rounded-xl  shadow-xl shadow-slate-500"
+        style="background-image: url('https:/source.unsplash.com/1000x600?family'); ">
+    </div>
+    <h3>opacity</h3>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain bg-no-repeat bg bg-center rounded-xl  shadow-xl shadow-slate-500 opacity-80"
+        style="background-image: url('https:/source.unsplash.com/1000x600?family'); ">
+    </div>
+    <h3>mix blane mode : multyply</h3>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain bg-no-repeat bg bg-center rounded-xl  shadow-xl shadow-slate-500 overflow-hidden border-8"
+        style="background-image: url('https:/source.unsplash.com/1000x600?family'); ">
+        <div class="w-full h-full bg-blue-300 mix-blend-multiply"></div>
+    </div>
+    <h3>mix blane mode: darken</h3>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain bg-no-repeat bg bg-center rounded-xl  shadow-xl shadow-slate-500 overflow-hidden border-8"
+        style="background-image: url('https:/source.unsplash.com/1000x600?family'); ">
+        <div class="w-full h-full bg-blue-300 mix-blend-darken"></div>
+    </div>
+
+    <h2>FILTERS</h2>
+    <h3>blur dan hover(pseudo)</h3>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain bg-no-repeat bg bg-center rounded-xl  shadow-xl shadow-slate-500 overflow-hidden border-8 blur-sm hover:blur-none"
+        style="background-image: url('https:/source.unsplash.com/1000x600?family'); ">
+
+    </div>
+    <h3>backdrop</h3>
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] bg-contain bg-no-repeat bg bg-center rounded-xl  shadow-xl shadow-slate-500 overflow-hidden border-8 flex"
+        style="background-image: url('https:/source.unsplash.com/1000x600?family'); ">
+        <div class="w-[100px] h-[100px] bg-white/30 m-auto backdrop-blur-md"></div>
+    </div>
+
+    <hr class="my-52">
+
+    <h2>PSEUDO ELEMENTS & DARK MODE</h2>
+
+    <div class="flex justify-center">
+        <span class="text-sm text-slate-500 mr-2">light</span>
+        <input type="checkbox" class="hidden" id="toggle">
+        <label for="toggle">
+            <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
+                <div class="w-4 h-4 rounded-full bg-white toggle-circle "></div>
+            </div>
+        </label>
+        <span class="text-sm text-slate-500 ml-2">dark</span>
+    </div>
+
+    <h3>tyling base on parent state</h3>
+    <button
+        class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold font-poppins block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring-sky-300 dark:text-slate-800 dark:bg-slate-300 dark:hover:text-slate-900 dark:hover:bg-slate-100">Simpan</button>
+
+    <div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-poppin">
+        <h5 class="font-bold text-slate-700 text-lg mb-3 group  -hover:text-white">my card</h5>
+        <p class="text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit autem fugiat doloremque
+            alias obcaecati eum dignissimos, ad eius optio nesciunt, laborum repudiandae ex cupiditate adipisci
+            reprehenderit. Esse soluta adipisci autem.</p>
+    </div>
+
+    <h3>highlighted text</h3>
+    <div
+        class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-poppin hover:bg-sky-500 grup">
+        <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white selection:bg-lime-300">my card</h5>
+        <p class="text-slate-600 group-hover:text-white selection:bg-lime-300">Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Sit autem fugiat doloremque alias obcaecati eum dignissimos, ad eius optio nesciunt,
+            laborum repudiandae ex cupiditate adipisci reprehenderit. Esse soluta adipisci autem.</p>
+    </div>
+
+    <h3>first line first letter</h3>
+    <div
+        class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-serif hover:bg-sky-500 grup">
+        <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white selection:bg-lime-300">my card</h5>
+        <p
+            class="text-slate-600 group-hover:text-white selection:bg-lime-300 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit autem fugiat doloremque alias obcaecati eum
+            dignissimos, ad eius optio nesciunt, laborum repudiandae ex cupiditate adipisci reprehenderit. Esse soluta
+            adipisci autem.</p>
+    </div>
+
+    <h3>style ke elements input</h3>
+    <div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-serif ">
+        <form action="">
+            <label for="email">
+                <span
+                    class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-500 after:ml-0.5">Email</span>
+                <input type="email" id="email" placeholder="masukan email"
+                    class="px-3 py-2 border shadow ronded w-full block text-sm placeholder: text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-pink-500 invalid:focus:ring-pink-500 invalid:focus:border-pink-500 peer">
+
+                <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible">Email Tidak Valid</p>
+            </label>
+
+        </form>
+
+    </div>
+
+    <div class="mb-96"></div>
+
+    <script>
+        const checkbox = document.querySelector('#toggle');
+        const html = document.querySelector('html');
+
+        checkbox.addEventListener('click', function () {
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+        })
+
+    </script>
 </body>
+
 </html>
